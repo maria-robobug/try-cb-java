@@ -1,5 +1,7 @@
 package trycb.service;
 
+import static com.couchbase.client.java.kv.InsertOptions.insertOptions;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -21,9 +23,8 @@ import org.springframework.security.authentication.AuthenticationCredentialsNotF
 import org.springframework.security.authentication.AuthenticationServiceException;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.stereotype.Service;
-import trycb.model.Result;
 
-import static com.couchbase.client.java.kv.InsertOptions.insertOptions;
+import trycb.model.Result;
 
 
 @Service
